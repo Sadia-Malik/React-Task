@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* .header-img{
+            width: 100%;
+        height: 100vh;
+            background-image: url("bg-imgg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        } */
+        .header-img {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("bg-imgg.jpg"); */
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-imgg.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   /* Adjust the alpha value (last parameter) as needed */
+}
+
+.h1-color{
+    color:  #FFFFFF;
+}
+.p-color{
+    color:  #FFFFFF;
+}
+.form-bgg{
+
+    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.2);
+}
+.profile-img-re{
+    position: relative;
+}
+.profile-img-1{
+ position: absolute;
+ top: -50px;
+ left: 40%;
+}
+.profile-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}
+.prof-text-c{
+    color: #242325;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    font-family: inter, sans-serif;
+ 
+    letter-spacing: 1px;
+}
+
+
+
+/* .content-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee
+} */
+
+.pulse i {
+    color: #fff
+}
+
+.pulse {
+    height: 50px;
+    width: 50px;
+    background-color: #2a74ed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.pulse::before {
+    content: "";
+    position: absolute;
+    /* border: 1px solid #2a74ed; */
+    width: calc(50% + 40px);
+    height: calc(50% + 40px);
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(106, 158, 242 , 0.9);
+    animation: pulse 1s linear infinite
+}
+
+.pulse::after {
+    content: "";
+    position: absolute;
+    /* border: 1px solid #2a74ed; */
+    width: calc(50% + 40px);
+    height: calc(50% + 40px);
+    border-radius: 50%;
+    animation: pulse 1s linear infinite;
+    box-shadow: 0px 0px 0px 3px rgba(106, 158, 242 , 0.5);
+    
+    animation-delay: 0.3s
+}
+.text-2{
+    font-size: 30px;
+    color: #242325;
+    word-spacing:2;
+    letter-spacing: normal;
+    line-height: 1;
+    font-weight: 500;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+.position-11{
+   position: relative;
+}
+
+.position-22{
+ position: absolute;
+ bottom: 30px;
+ left: -50px;
+}
+.h-img-1{
+  width: 100%;
+  height: auto;
+}
+.h-img-2{
+  width: 50%;
+  height: auto;
+}
+    </style>
+  </head>
+  <body>
+ 
+    <!-- <section>
+        <div class="header-img">
+             <div class="container pt-5">
+              <div class="row pt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                    <h1 class="text-white fw-bold h1-color pt-5 mt-3">Growth Hacking for Exponential Success</h1>
+                    <p class="text-white p-color">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                     <div class="row mt-5 d-flex align-items-center ">
+                      <div class="col-lg-2 ">
+                        <div class="">
+                            <div class="pulse"><i class="fa-solid fa-play"></i> </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-10 ">
+                         <h5 class="text-white">Your business is not growing enough?
+                      
+                         </h5>
+                         <p class="text-white">Watch video to learn more</p>
+                      </div>
+                     </div>
+
+                 </div>
+                 <div class="col-lg-5 col-md-5 col-sm-12 profile-img-re form-bgg mt-4 pt-3 offset-lg-1 offset-md-1">
+                    <div class="">
+                      <div class="profile-img-1">
+                         <img src="profile-img.jpg" alt="" class="profile-img">
+                      </div>
+                      <div>
+                         <p class="px-3 pt-4 mt-2 pb-2 prof-text-c text-center" >Get Professional Help for Your Business</p>
+                         <div class="col ">
+                             <input type="text" class="form-control rounded-0"  placeholder="City" aria-label="City">
+                         </div>
+                         
+                         <div class="row g-0 mt-3">
+                             <div class="col-lg-6">
+                               <input type="text" class="form-control rounded-0" placeholder="State" aria-label="State">
+                             </div>
+                             <div class="col-lg-6">
+                               <input type="text" class="form-control rounded-0" placeholder="Zip" aria-label="Zip">
+                             </div>
+                           </div>
+ 
+                           <div class="col mt-3">
+                             <input type="text" class="form-control rounded-0" placeholder="City" aria-label="City">
+                         </div>
+ 
+                         <button type="submit" class="btn btn-primary mt-3 mb-3 rounded-0 d-inline-block w-100">Submit</button>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+             </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="container">
+          <div class="d-flex">
+             <div class="col-lg-6 col-md-6 col-sm-6">
+               <p>ABOUT US</p>
+               <p class="text-2">We are a collective of growth hacker that bring values to global companies</p>
+               <button type="submit" class="btn btn-primary mt-3 mb-3 rounded-0 d-inline-block">Submit</button>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6">
+                <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+
+                </p>
+                <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus</p>
+                <p>CEO of Growthy</p>
+                <p>Donald Chavez Brown, MBA</p>
+                <img src="https://kit.baliniz.com/growthy/wp-content/uploads/sites/3/2020/10/signature@2x.png" alt="">
+             </div>
+          </div>
+    </section> -->
+
+    <!-- <section class=" container d-flex">
+        <div class="d-flex ">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div> 
+                    <img src="dart-board.png" alt="" class="w-25 text-secondary" width="20px">
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+                <div> 
+                    <img src="dart-board.png" alt="" class="w-25" width="20px">
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+             </div> 
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <div> 
+                    <img src="dart-board.png" alt="" class="w-25" width="20px">
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+                <div> 
+                    <img src="dart-board.png" alt="" class="w-25" width="20px">
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+             </div>  
+          
+             <div class="col-lg-5 col-md-5 col-sm-12 position-11 offset-lg-1 offset-md-1">
+                <div class="">
+                    <img src="mg-1.jpg" alt="" class="img-fluid  h-img-1">
+                </div>
+                <div class="position-22">
+                    <img src="financial-advisor-consulting.jpg" alt=""  class="img-fluid h-img-2">
+                </div>
+             </div>
+        </div>
+    </section> -->
+ <section class="container d-lg-flex d-md-flex">
+    
+    <div class=" col-lg-6 col-md-6 col-sm-12">
+        <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-12">
+              <div> 
+                   <i class="fa-brands fa-searchengin"></i>
+                   <p>Planing & Strategy</p>
+                   <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+             </div>
+             <div> 
+                <i class="fa-brands fa-searchengin"></i>
+                <p>Planing & Strategy</p>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+          </div>
+           </div>
+            
+       
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+
+               <div> 
+                   <i class="fa-brands fa-searchengin"></i>
+                   <p>Planing & Strategy</p>
+                   <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+                   <div> 
+                    <i class="fa-brands fa-searchengin"></i>
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+              </div>
+              </div>
+              
+              
+            </div>
+        </div>
+   
+       
+   </div>
+
+   <div class="col-lg-5 col-md-5 col-sm-12 position-11 offset-lg-1 offset-md-1">
+    <div class="">
+        <img src="mg-1.jpg" alt="" class="img-fluid  h-img-1">
+    </div>
+    <div class="position-22">
+        <img src="financial-advisor-consulting.jpg" alt=""  class="img-fluid h-img-2">
+    </div>
+ </div>
+   <!-- <div class=" col-lg-6 col-md-6 col-sm-12">
+       <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+             <div> 
+                  <i class="fa-brands fa-searchengin"></i>
+                  <p>Planing & Strategy</p>
+                  <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+            </div>
+          </div>
+           
+      
+           <div class="col-lg-6 col-md-6 col-sm-12">
+
+              <div> 
+                  <i class="fa-brands fa-searchengin"></i>
+                  <p>Planing & Strategy</p>
+                  <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+             </div>
+             
+           </div>
+       </div>
+  </div> -->
+ </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

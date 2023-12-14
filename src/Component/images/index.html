@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* .header-img{
+            width: 100%;
+        height: 100vh;
+            background-image: url("bg-imgg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        } */
+        .header-img {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("bg-imgg.jpg"); */
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-imgg.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   /* Adjust the alpha value (last parameter) as needed */
+}
+
+.h1-color{
+    color:  #FFFFFF;
+    font-size: 50px!important;
+}
+.p-color{
+    color:  #FFFFFF;
+    font-size: 16px!important;
+}
+.form-bgg{
+
+    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.2);
+}
+.profile-img-re{
+    position: relative;
+}
+.profile-img-1{
+ position: absolute;
+ top: -50px;
+ left: 40%;
+}
+.profile-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}
+.prof-text-c{
+    color: #242325;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    font-family: inter, sans-serif;
+ 
+    letter-spacing: 1px;
+}
+
+
+
+/* .content-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee
+} */
+
+.pulse i {
+    color: #fff
+}
+
+.pulse {
+    height: 50px;
+    width: 50px;
+    background-color: #2a74ed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.pulse::before {
+    content: "";
+    position: absolute;
+    /* border: 1px solid #2a74ed; */
+    width: calc(50% + 40px);
+    height: calc(50% + 40px);
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(106, 158, 242 , 0.9);
+    animation: pulse 1s linear infinite
+}
+
+.pulse::after {
+    content: "";
+    position: absolute;
+    /* border: 1px solid #2a74ed; */
+    width: calc(50% + 40px);
+    height: calc(50% + 40px);
+    border-radius: 50%;
+    animation: pulse 1s linear infinite;
+    box-shadow: 0px 0px 0px 3px rgba(106, 158, 242 , 0.5);
+    
+    animation-delay: 0.3s
+}
+.text-2{
+    font-size: 30px;
+    color: #242325;
+    word-spacing:2;
+    letter-spacing: normal;
+    line-height: 1;
+    font-weight: 500;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+.position-11{
+   position: relative;
+}
+
+.position-22{
+ position: absolute;
+ bottom: 30px;
+ left: -50px;
+}
+.h-img-1{
+  width: 100%;
+  height: auto;
+}
+.h-img-2{
+  width: 50%;
+  height: auto;
+}
+
+/* .border-linee11{
+    position: absolute;
+} */
+.border-linee{
+    width: 100px;
+    height: 5px ;
+    background: #FFFFFF;
+    left: 50%;
+    bottom: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto!important;
+    
+}
+.card-po{
+    position: relative;
+}
+.card-po .card{
+    border: none;
+    padding:12px 5px  35px 5px;
+    background-color: #2a74ed;
+}
+.card-imgg{
+    position: absolute;
+    bottom: -85px;
+    left: 37%;
+}
+.card-imgg img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.text3 i{
+          width: 37px;
+          height: 37px;
+         background-color: #2a74ed;
+          border-radius: 50%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          color:#FFFFFF;
+          margin-right: 8px;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: all 0.4s;
+      
+      }
+      .text3 i:hover{
+         background: #2a3f60;
+         
+      }
+</style>
+  </head>
+  <body>
+ 
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid px-5">
+              <a class="navbar-brand" href="#"><img src="logo@2x.png" alt="" class="w-50 img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Case Study
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      News
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contact
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <div  class="d-flex">
+                    <div>
+                        <p><span>#</span> <span>
+                            0361 23456</span> <br> <span>Free Consultation</span></p>
+                    </div>
+                    <div>
+                        <button class="btn-primary text-white btn-group-lg d-inline-block p-2 ms-lg-2 bg-primary border-0 ">Hire US Now</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <section>
+        <div class="header-img">
+             <div class="container pt-5">
+              <div class="row pt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                    <h1 class="text-white fw-bold h1-color pt-5 mt-3 fs-1">Growth Hacking for Exponential Success</h1>
+                    <p class="text-white p-color">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                     <div class="row mt-5 d-flex align-items-center ">
+                      <div class="col-lg-2 ">
+                        <div class="">
+                            <div class="pulse"><i class="fa-solid fa-play"></i> </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-10 ">
+                         <h5 class="text-white">Your business is not growing enough?
+                      
+                         </h5>
+                         <p class="text-white">Watch video to learn more</p>
+                      </div>
+                     </div>
+
+                 </div>
+                 <div class="col-lg-5 col-md-5 col-sm-12 profile-img-re form-bgg mt-4 pt-3 offset-lg-1 offset-md-1">
+                    <div class="">
+                      <div class="profile-img-1">
+                         <img src="profile-img.jpg" alt="" class="profile-img">
+                      </div>
+                      <div>
+                         <p class="px-3 pt-4 mt-2 pb-2 prof-text-c text-center" >Get Professional Help for Your Business</p>
+                         <div class="col ">
+                             <input type="text" class="form-control rounded-0 p-3"  placeholder="Your Name" aria-label="City">
+                         </div>
+                         
+                         <div class="row g-0 mt-3">
+                             <div class="col-lg-6">
+                               <input type="text" class="form-control rounded-0 p-3" placeholder="Email" aria-label="State">
+                             </div>
+                             <div class="col-lg-6">
+                               <input type="text" class="form-control rounded-0 p-3" placeholder="Phone Number" aria-label="Zip">
+                             </div>
+                           </div>
+ 
+                           <div class="col mt-3">
+                             <input type="text" class="form-control rounded-0 p-3" placeholder="Subject" aria-label="City">
+                         </div>
+ 
+                         <button type="submit" class="btn btn-primary mt-3 p-3 mb-3 rounded-0 d-inline-block w-100">Send Inquiry</button>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+             </div>
+        </div>
+    </section>
+
+    <section class="container About-US">
+          <div class="d-flex">
+             <div class="col-lg-6 col-md-6 col-sm-6">
+               <p class="t1">ABOUT US</p>
+               <p class="text-2 t2-h1">We are a collective of growth hacker that bring values to global companies</p>
+               <button type="submit" class="btn btn-primary mt-3 mb-3 rounded-0 d-inline-block py-1 px-4 fs-4 ">Learn More</button>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 ">
+                <p class="t3-p">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+
+                </p>
+                <p class="t3-p">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus</p>
+                <p class="ceo">CEO of Growthy</p>
+                <p class="t3-p">Donald Chavez Brown, MBA</p>
+                <img src="https://kit.baliniz.com/growthy/wp-content/uploads/sites/3/2020/10/signature@2x.png" alt="" class="img-fluid w-50">
+             </div>
+          </div>
+    </section>
+
+    <!-- <section>
+        <div class="d-flex">
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <div>  <img src="dart-board.png" alt="" class="w-25">
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+             </div>
+             <div>  <img src="dart-board.png" alt="" class="w-25">
+                <p>Planing & Strategy</p>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+         </div>
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <div>  <img src="dart-board.png" alt="" class="w-25" width="20px">
+                    <p>Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+             </div>
+             <div>  <img src="dart-board.png" alt="" class="w-25" width="20px">
+                <p>Planing & Strategy</p>
+                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+         </div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-12 position-11">
+                <div class="">
+                    <img src="mg-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="position-22">
+                    <img src="financial-advisor-consulting.jpg" alt=""  class="img-fluid">
+                </div>
+             </div>
+        </div>
+    </section> -->
+
+    <section class="container d-lg-flex d-md-flex">
+    
+        <div class=" col-lg-6 col-md-6 col-sm-12 ">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-12 icons-pro">
+                  <div> 
+                       <i class="fa-brands fa-searchengin"></i>
+                       <p class="p11">Planing & Strategy</p>
+                       <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+                 </div>
+                 <div> 
+                    <i class="fa-solid fa-signal"></i>
+                    <p class="p11">Planing & Strategy</p>
+                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+              </div>
+               </div>
+                
+           
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-5 icons-pro">
+    
+                   <div> 
+                    <i class="fa-regular fa-lightbulb"></i>
+                       <p class="p11">Planing & Strategy</p>
+                       <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p></div>
+                       <div> 
+                        <i class="fa-solid fa-diamond"></i>
+                        <p class="p11">Planing & Strategy</p>
+                        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis.</p>
+                  </div>
+                  </div>
+                  
+                  
+                </div>
+            </div>
+       
+           
+       </div>
+    
+       <div class="col-lg-5 col-md-5 col-sm-12 position-11 offset-lg-1 offset-md-1">
+        <div class="">
+            <img src="mg-1.jpg" alt="" class="img-fluid  h-img-1">
+        </div>
+        <div class="position-22">
+            <img src="financial-advisor-consulting.jpg" alt=""  class="img-fluid h-img-2">
+        </div>
+     </div>
+     
+     </section>
+
+     <section class="container">
+        <p class="text-center text-primary">
+            OUR CORE VALUE
+
+        </p>
+        <h3 class="text-center mb-5">
+            Top-Notch Marketing Agency
+
+        </h3>
+        <div class="d-lg-flex d-md-flex">
+
+            <div class="col-lg-4 col-md-4 col-sm-12 card11 p-5 mb-4">
+                <div class=" text-center
+                              ic  ">
+                    <!-- <img src="dart-board.png" alt="" class="img-fluid  h-img-1"> -->
+                    <i class="fa-solid fa-people-group text-center "></i>
+                </div>
+                <h3 class="text-center clr">Boldness</h3>
+                <p class="text-center clr">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 card11 m-1 mt-5 p-5 mb-4">
+                <div class= " text-center ic">
+                    <!-- <img src="dart-board.png" alt="" class="img-fluid  h-img-1"> -->
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                </div>
+                <h3 class="clr">Boldness</h3>
+                <p class="clr">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 card11 p-5 mb-4">
+                <div class=" text-center ic">
+                    <!-- <img src="dart-board.png" alt="" class="img-fluid  h-img-1"> -->
+                    <i class="fa-regular fa-hand-peace"></i>
+                </div>
+                <h3 class="clr">Boldness</h3>
+                <p class="clr">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+
+        </div>
+        
+
+     </section>
+         
+     <section class="container-fluid bg-primary mt-3 py-5 pb-4 border-linee11"> 
+        
+        <div class="text-center  pt-5">
+            <p>WE HAVE IN-DEPTH EXPERIENCE IN OUR CORE SPECIALTIES</p>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12  mt-4 p-4 m-auto">
+            <h3 class="text-center  mt-1 ">Our extensive resources and commitment to client service satisfy the needs of a diverse client across multiple industries</h3>
+        </div>
+        <div class="border-linee ">
+            
+        </div>
+
+        
+     </section>
+
+
+     <section class="container py-5 bg-secondary position-relative ">
+       
+                <div class="pulse m-auto"><i class="fa-solid fa-play"></i> </div>
+           
+     </section>
+
+     <section class="container">
+       <div class="d-lg-flex  d-md-flex justify-content-between">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <p>OUR TEAM</p>
+            <h3>Meet our valued team members</h3>
+         </div>
+         <div class="col-lg-3 col-md-3 col-sm-12">
+            <button type="submit" class="btn btn-primary mt-3 mb-3 rounded-0 d-inline-block w-100">Submit</button>
+
+         </div>
+       </div>
+     </section>
+     <section class="container">
+
+    
+        <div class="d-lg-flex d-md-flex">
+           <div class="col-lg-4 col-md-4 col-sm-12">
+              <div>
+                <img src="successful-banker-4YD2XLE-819x1024.jpg" alt="" class="img-fluid">
+              </div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-12">
+            <div>
+              <img src="enter.jpg" alt="" class="img-fluid">
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-12">
+            <div>
+             <img src="confide.jpg" alt="" class="img-fluid">
+            </div>
+         </div>
+        </div>
+     </section>
+
+     <section class="container-fluid">
+     <div class="container">
+        <p>TESTIMONIALS</p>
+        <h3>Worldwide Clients</h3>
+        <div class="row">
+            <div  class="col-lg-4 col-md-4 col-sm-12 card-po ">
+                <div class="card">
+                    <i class="fa-solid fa-quote-left fa-2x text-center py-3"></i>
+                    <p class="text-center mb-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="card-imgg">
+                        <img src="profile-img.jpg" alt="">
+                        <p class="text-center">Kim Wexler</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div  class="col-lg-4 col-md-4 col-sm-12 card-po">
+                <div class="card">
+                    <i class="fa-solid fa-quote-left fa-2x text-center py-3 "></i>
+                    <p class="text-center mb-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="card-imgg">
+                        <img src="profile-img.jpg" alt="">
+                        <p class="text-center">Deddy Rogan</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div  class="col-lg-4 col-md-4 col-sm-12 card-po  ">
+                <div class="card">
+                    <i class="fa-solid fa-quote-left text-center fa-2x py-3"></i>
+                    <p class="text-center mb-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="card-imgg">
+                        <img src="profile-img.jpg" alt="">
+                        <p class="text-center">Jimmy Morgan</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+     </div>
+     </section>
+
+
+     <section class="container">
+        <p class="text-center">BLOGS
+        </p>
+        <h3  class="text-center">Latest News
+        </h3>
+
+        <div class="d-lg-flex d-md-flex">
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="latest-1.jpg" alt=""  width="100% " height="100%" >
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <h3>
+                    What Is Thought Leadership? And When You Should Use It?
+                </h3>
+                <p><span>@</span>JUNE 16, 2021</p>
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,...</p>
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="latest-2.jpg" alt=""  width="100% " height="100%" >
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-12">
+                <h3>
+                    What Is Thought Leadership? And When You Should Use It?
+                </h3>
+                <p><span>@</span>JUNE 16, 2021</p>
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,...</p>
+             </div>
+        </div>
+        <div class="d-lg-flex d-md-flex">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+               <img src="latest-n3.jpg" alt=""  width="100% " height="100%" >
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+               <h3>
+                   What Is Thought Leadership? And When You Should Use It?
+               </h3>
+               <p><span>@</span>JUNE 16, 2021</p>
+               <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,...</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+               <img src="latest-4.jpg" alt=""  width="100% " height="100%"  >
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+               <h3>
+                   What Is Thought Leadership? And When You Should Use It?
+               </h3>
+               <p><span>@</span>JUNE 16, 2021</p>
+               <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,...</p>
+            </div>
+       </div>
+     </section>
+     <section class="container-fluid bg-primary mt-3 py-5 pb-4 "> 
+        
+        
+        <div class="col-lg-6 col-md-8 col-sm-12  mt-4 p-4 m-auto">
+            <h1 class="text-center  mt-1 fw-bold fs-1 text-white  ">Are You Ready To Growth Hack Your Business?</h1>
+        </div>
+        <div class="text-center  pt-3 pb-3">
+            <p class="text-white">WE HAVE IN-DEPTH EXPERIENCE IN OUR CORE SPECIALTIES</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            
+        <button class="btn btn-light d-inline-block text-center text-primary p-3 m-auto"> Schedule it Today -></button>
+        </div>
+
+        
+     </section>
+
+     <section class="container-fluid bg-primary">
+        <section class="container">
+            <div class="d-lg-flex d-md-flex">
+                <div class="col-lg-5 col-md-4 col-sm-12">
+                   <img src="logo-footer@2x.png" alt="" class="img-fluid w-75">
+                   <p>
+                    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                   </p>
+                   <p>
+                    © 2021 Growthy. All rights reserved.
+                   </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                   <h4>COMPANY</h4>
+                   <p>About Us</p>
+                   <p>Our Phlosophy</p>
+                   <p>Job Vacancy</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                  <h4>SERVICES</h4>
+                  <p>Digital Markiting</p>
+                  <p> User Acquisition</p>
+                  <p>Brand Activation</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <h4>FOLLOW US</h4>
+                  <div class="text3">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+
+                </div>
+            </div>
+        </section>
+
+     </section>
+
+     <!-- <section class="position-relative">
+        ghhjj
+     </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
