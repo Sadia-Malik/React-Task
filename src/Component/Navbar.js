@@ -20,11 +20,15 @@ const Navbar = () => {
     <section>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid px-5">
+          <div className='d-flex '>
+       <div>
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="img" className="w-50 img-fluid" />
           </Link>
-          <button
-            className="navbar-toggler"
+          </div>
+         <div>
+         <button
+            className="navbar-toggler mt-4"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -32,8 +36,10 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon float-end "></span>
           </button>
+         </div>
+       </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li
